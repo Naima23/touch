@@ -4,7 +4,9 @@ const app = express();
 const port = 3011;
 const mongoose = require('mongoose');
 const MessageRoute = require('./routes/MessageRoute');
+const cors = require('cors');
 
+app.use(cors());
 app.use(express.json()); // for data json
 app.use(express.urlencoded({extended:false})); // for  data http
 

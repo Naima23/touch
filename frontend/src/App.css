@@ -1,0 +1,26 @@
+.App {
+  /* text-align: center; */
+}
+
+form{
+margin-left: 360px;
+margin-top: 50px;
+}
+
+table{
+  margin-left: 165px;
+  margin-top: 150px;
+
+}
+
+.contact{
+  margin-top: 40px;
+  margin-right: 500px;
+}
+
+.form-group {
+  text-align: center;
+}
+.btn-message{
+  text-align: center;
+}
