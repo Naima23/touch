@@ -1,8 +1,8 @@
 import './App.css';
 import Home from './views/Home';
 import ListeMessage from './views/ListeMessage';
-import {Route ,BrowserRouter as Router, Switch} from 'react-router-dom'
 import Repondre from './views/Repondre';
+import {Route ,BrowserRouter as Router, Switch } from 'react-router-dom'
 
 function App() {
 
@@ -10,9 +10,9 @@ function App() {
     <Router>
     <div className="App">
          <Switch>
-    <Route  path='/repondre' component={Repondre} />
+    <Route exact  path='/' component={Home} />
+    <Route  path='/repondre/:id' component={Repondre} />
     <Route  path='/list' component={ListeMessage} />
-    <Route  path='/' component={Home} />
          </Switch>
     </div>
     </Router>

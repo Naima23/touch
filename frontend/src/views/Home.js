@@ -3,7 +3,9 @@ import axios from 'axios';
 
 
 
-const Home = () => {
+
+const Home = (props) => {
+
   const [postData, setPostData]= useState({Nom :'',Prenom :'',Email :'',Telephone :'',Message :''})
 
   console.log(postData)
@@ -19,15 +21,17 @@ const Home = () => {
       .then((response) => {
         console.log(response)
       });
+props.history.push('/list')
   }
 
   return (
+    
     <div>
 
       <div>
         <nav className="navbar navbar-light bg-light">
           <div className="container-fluid">
-            <a className="navbar-brand" href="/">keep în touch</a>
+                         <a className="navbar-brand" href="/">keep în touch</a>
           </div>
         </nav>
       </div>
@@ -55,6 +59,10 @@ const Home = () => {
 
         <button onClick={onCreatePost} type="submit" className="btn btn-primary">envoyer</button>
       </form>
+     
+    
+   
+
 
 
       <div>
@@ -62,6 +70,7 @@ const Home = () => {
       </div>
 
     </div>
+ 
 
 
 

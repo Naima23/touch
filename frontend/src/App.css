@@ -24,3 +24,11 @@ table{
 .btn-message{
   text-align: center;
 }
+
+.table-dark{
+  margin-top: -10px;
+}
+
+.style{
+  margin-left: 30%;
+}
